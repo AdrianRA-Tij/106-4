@@ -1,0 +1,148 @@
+
+html, body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 50px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    height: 100%;
+}
+
+main {
+    height: calc(100% - 90px);
+    min-height: 700px;
+}
+
+.parent {
+    display: flex;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg');
+}
+
+#list {
+    flex: 3;
+    position: relative;
+}
+
+#toggleView {
+     position: absolute;
+     top:10px;
+     right: 30px;
+}
+
+#list h5 {
+    text-align: center;
+    color: white;
+    margin: 5px 0 10px 0;
+    font-size: 26px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#form {
+    flex: 2;
+    background-color: #dfdfdfc1;
+    padding: 10px 25px 10px 25px;
+    overflow-y: auto;
+    box-shadow: 1px 0 9px 0 #333;
+}
+
+#form h5 {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.field {
+    margin-bottom: 22px;
+}
+
+.field label {
+    color: #333;
+    margin-bottom: 0;
+}
+
+.button-container{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.iImportant {
+    font-size: 30px;
+    cursor: pointer;
+    color: #6a6a6b;
+}
+
+/* space = inside
+no space = same element contains both
+ */
+.iImportant.fa-solid {
+    color: tomato;
+}
+
+footer{
+    background-color: rgb(75 81 84);
+    color: white;
+    text-align: center;
+    padding: 5px 0 10px;
+    height: 40px;
+}
+
+#pending-tasks{
+    padding: 15px 20px 10px;
+}
+
+.task {
+    display: flex;
+    /* border: 1px solid #307473; */
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px -2px #32292F;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.593);
+}
+
+.task:hover{
+    box-shadow: 1px 1px 5px -1px #124544;
+    /* border: 1px solid #338684; */
+    cursor: pointer;
+}
+
+.task .info {
+    flex: 5;
+}
+
+.task .info h5 {
+    margin: 0 0 5px 0;
+}
+
+.task .info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.task .category {
+    flex: 1;
+}
+
+.task .details {
+    flex: 2;
+}
+
+.task .details label {
+    display: block;
+    text-align: center;
+    margin-bottom: 3px;
+}
